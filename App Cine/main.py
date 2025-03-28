@@ -30,7 +30,7 @@ def seleccionar_asiento():
         asiento_seleccionado = input("\nSeleccione su asiento: ")
 
         if asiento_seleccionado in asientos.asientos and asientos.asientos[asiento_seleccionado] == "Disponible":
-            # Actualiza el estado del asiento seleccionado a "Ocupado"
+            
             asientos.asientos[asiento_seleccionado] = "Ocupado"
             print(f"{asiento_seleccionado} es muy Comodo, Buena Elección") 
             break
@@ -49,17 +49,17 @@ def main():
     print("🎥 Bienvenido a Python Films, tu cine de confianza 🎬")
     time.sleep(2)
 
-    # Selección de la función con validación de la opción 4
+    
     opcion_funcion = seleccionar_funcion()
     funcion_seleccionada = funciones.funciones[opcion_funcion]
 
-    # Selección del asiento con validación
+    
     asiento_seleccionado = seleccionar_asiento()
 
-    # Selección de comida
+ 
     comida_seleccionada = seleccionar_comida()
 
-    # Resumen de la compra
+    
     print("\n🎟️ Resumen de su reserva:")
     print(f"🍿 Película: {funcion_seleccionada}")
     print(f"🪑 Asiento: {asiento_seleccionado}")
